@@ -23,4 +23,8 @@ public class PlayerController : MonoBehaviour
         Vector3 newVelocity= new Vector3(xSpeed, 0f, zSpeed);
         playerRigidbody.linearVelocity = newVelocity;
     }
+    public void Die()
+    {
+        gameObject.SetActive(false);
+    }
 }
