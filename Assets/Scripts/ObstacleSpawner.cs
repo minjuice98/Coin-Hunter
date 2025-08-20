@@ -4,7 +4,7 @@ public class ObstacleSpawner : MonoBehaviour
 {//
     public GameObject ObstaclePrefab;
     private Transform target;
-    private float spawnRate = 5f;
+    private float spawnRate = 1f;
     private Vector3 spawnObPositionMin = new Vector3(-4f, 10f, -4f);
     private Vector3 spawnObPositionMax = new Vector3(4f, 15f, 4f);
 
