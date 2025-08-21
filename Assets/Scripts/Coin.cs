@@ -13,8 +13,10 @@ public class Coin : MonoBehaviour
         if (other.tag == "Player")
         {
             PlayerController playerController=other.GetComponent<PlayerController>();
+            GameManager gameManager = FindAnyObjectByType<GameManager>();
             if (playerController != null)
             {
+                gameManager.coinCount++;
                 Destroy(gameObject);
             }
         }
